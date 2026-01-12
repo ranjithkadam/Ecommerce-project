@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- ==============Header Starts -->
+    <header class="flex flex-col md:flex-row items-center md:justify-between py-4 bg-stone-100 gap-4 md:gap-0">
+
+        <div id="logo" class="w-full md:w-[20%] text-center">
+            <h1 class="font-bold text-xl">Ecommerce</h1>
+        </div>
+
+        <nav class="w-full md:w-[30%] flex justify-center md:justify-between gap-4 text-center">
+            <a href="./Home.html" class="text-stone-600 hover:text-black">Home</a>
+            <a href="./Products.html" class="text-stone-600 hover:text-black">Products</a>
+            <a href="./About.html" class="text-stone-600 hover:text-black">About</a>
+            <a href="./Contact.html" class="text-stone-600 hover:text-black">Contact</a>
+        </nav>
+
+        <div class="w-full md:w-[28%] flex justify-center md:justify-evenly gap-3">
+            <a href="/authountication/Login.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Login
+                </button>
+            </a>
+
+            <a href="/authountication/Register.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Register
+                </button>
+            </a>
+
+            <a href="./Cart.html" id="cart-page"
+                class="relative border px-4 py-1 rounded hover:bg-black hover:text-white">
+                Cart (
+                <span id="cart-count" >
+                    0
+                </span>
+                )
+            </a>
+
+        </div>
+
+    </header>
+    <!-- =====================Header Ends ========================== -->
+    <div class="text-3xl text-center py-4">
+        <h1>Cart</h1>
+    </div>
+    <section class="flex justify-evenly">
+        <div>
+            <table id="added-products" class="border w-180 ">
+                <tr class="border py-4 border-stone-400 h-10 bg-stone-100">
+                    <th>Item List</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table id="order-summary" class="border w-100 ">
+                <tr class="border py-4 border-stone-400 h-10 bg-stone-100 ">
+                    <th>Order Summery</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="pl-3" id="cartProducts">Products</td>
+                    <td id="totalBill" class="text-center"></td>
+                </tr>
+                <tr>
+                    <td class="pl-3">Shopping</td>
+                    <td id="shopping"></td>
+                </tr>
+                <tr>
+                    <td class="pl-3">Total amount</td>
+                    <td id="totalAmount"></td>
+                </tr>
+                <tr class="w-100 text-center ">
+                    <td class="py-2"><button class="text-white bg-black w-90 py-1 rounded hover:cursor-pointer">Go to
+                            checkout</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <!-- ======================= Footer ============================== -->
+    <footer class="my-4 text-center">
+        <p>Made with &#10084; by <a href="https://www.linkedin.com/in/kadam-ranjith-kumar/" target="_blank"
+                class="font-bold">Ranjith Kadam</a> with help of ArchieversIT</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

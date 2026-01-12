@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_About</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- ==============Header Starts -->
+    <header class="flex flex-col md:flex-row items-center md:justify-between py-4 bg-stone-100 gap-4 md:gap-0">
+
+        <div id="logo" class="w-full md:w-[20%] text-center">
+            <h1 class="font-bold text-xl">Ecommerce</h1>
+        </div>
+
+        <nav class="w-full md:w-[30%] flex justify-center md:justify-between gap-4 text-center">
+            <a href="./Home.html" class="text-stone-600 hover:text-black">Home</a>
+            <a href="./Products.html" class="text-stone-600 hover:text-black">Products</a>
+            <a href="./About.html" class="text-stone-600 hover:text-black visited:text-black">About</a>
+            <a href="./Contact.html" class="text-stone-600 hover:text-black">Contact</a>
+        </nav>
+
+        <div class="w-full md:w-[28%] flex justify-center md:justify-evenly gap-3">
+            <a href="/authountication/Login.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Login
+                </button>
+            </a>
+
+            <a href="/authountication/Register.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Register
+                </button>
+            </a>
+
+           <a href="./Cart.html" id="cart-page"
+                class="relative border px-4 py-1 rounded hover:bg-black hover:text-white">
+                Cart (
+                <span id="cart-count" >
+                    0
+                </span>
+                )
+            </a>
+        </div>
+
+    </header>
+    <!-- =====================Header Ends ========================== -->
+
+    <!-- ===============Body Section Starts =========================== -->
+
+    <section>
+        <div class="py-6">
+            <h1 class="text-center text-3xl font-semibold">About Us</h1>
+        </div>
+        <hr class="text-stone-400 mx-10">
+
+        <div class="text-center text-xl text-stone-600 mx-10 my-4">
+            <p>We are a modern e-commerce platform designed to bring quality, style, and convenience together in one
+                place. Our store offers a wide range of products across Men’s Wear, Women’s Wear, Jewelry, and
+                Electronics, carefully selected to match everyday needs and the latest trends. We focus on providing a
+                smooth and user-friendly shopping experience, making it easy for customers to explore, compare, and
+                purchase products with confidence. Our goal is to create a reliable online shopping destination where
+                variety, affordability, and customer satisfaction come first.</p>
+        </div>
+
+        <div class="my-7">
+            <h2 class="text-center text-2xl mx-10">Our Products</h2>
+        </div>
+
+        <section id="product-types" class="flex flex-wrap justify-evenly my-7">
+
+            <!-- Men' Wear -->
+            <div
+                class="bg-neutral-primary-soft block max-w-sm border border-default border-stone-400 rounded-base shadow-xs rounded w-70 h-70">
+                <a href="./Products.html">
+                    <img class="rounded-t-base" src="./assets/mens wear.jpeg" alt="men's wear" />
+                </a>
+                <div class="p-6 text-center">
+
+                    <a href="./Products.html">
+                        <h5 class=" text-xl font-semibold tracking-tight text-heading">Men's Clothing</h5>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- ========Women's Cloth -->
+            <div
+                class="bg-neutral-primary-soft block max-w-sm border border-default border-stone-400 rounded-base shadow-xs rounded w-70 h-70">
+                <a href="./Products.html">
+                    <img class="rounded-t-base" src="./assets/womens wear.jpeg" alt="men's wear" />
+                </a>
+                <div class="p-6 text-center">
+
+                    <a href="./Products.html">
+                        <h5 class=" text-xl font-semibold tracking-tight text-heading">Women's Clothing</h5>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- ============================Jewelery================== -->
+            <div
+                class="bg-neutral-primary-soft block max-w-sm border border-default border-stone-400 rounded-base shadow-xs rounded w-70 h-70">
+                <a href="./Products.html">
+                    <img class="rounded-t-base" src="./assets/jewelery.jpeg" alt="men's wear" />
+                </a>
+                <div class="p-6 text-center">
+
+                    <a href="./Products.html">
+                        <h5 class=" text-xl font-semibold tracking-tight text-heading">Jewelery</h5>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- ================================ Electronics ===================== -->
+            <div
+                class="bg-neutral-primary-soft block max-w-sm border border-default border-stone-400 rounded-base shadow-xs rounded w-70 h-70">
+                <a href="./Products.html">
+                    <img class="rounded-t-base" src="./assets/electronics.jpeg" alt="men's wear" />
+                </a>
+                <div class="p-6 text-center">
+                    <a href="./Products.html">
+                        <h5 class=" text-xl font-semibold tracking-tight text-heading">Electronics</h5>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ======================= Footer ============================== -->
+        <footer class="my-4 text-center">
+            <p>Made with &#10084; by <a href="https://www.linkedin.com/in/kadam-ranjith-kumar/" target="_blank"
+                    class="font-bold">Ranjith Kadam</a> with help of ArchieversIT</p>
+        </footer>
+        <script src="./script.js"></script>
+</body>
+
+</html>

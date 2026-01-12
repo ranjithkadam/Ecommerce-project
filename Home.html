@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- ==============Header Starts -->
+    <header class="flex flex-col md:flex-row items-center md:justify-between py-4 bg-stone-100 gap-4 md:gap-0">
+
+        <div id="logo" class="w-full md:w-[20%] text-center">
+            <h1 class="font-bold text-xl">Ecommerce</h1>
+        </div>
+
+        <nav class="w-full md:w-[30%] flex justify-center md:justify-between gap-4 text-center">
+            <a href="./Home.html" class="text-stone-600 hover:text-black visited:text-black">Home</a>
+            <a href="./Products.html" class="text-stone-600 hover:text-black">Products</a>
+            <a href="./About.html" class="text-stone-600 hover:text-black">About</a>
+            <a href="./Contact.html" class="text-stone-600 hover:text-black ">Contact</a>
+        </nav>
+
+        <div class="w-full md:w-[28%] flex justify-center md:justify-evenly gap-3">
+            <a href="/authountication/Login.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Login
+                </button>
+            </a>
+
+            <a href="/authountication/Register.html">
+                <button class="border px-4 py-1 rounded active:bg-black hover:bg-black hover:text-white cursor-pointer">
+                    Register
+                </button>
+            </a>
+
+            <a href="./Cart.html" id="cart-page"
+                class="relative border px-4 py-1 rounded hover:bg-black hover:text-white">
+                Cart (
+                <span id="cart-count" >
+                    0
+                </span>
+                )
+            </a>
+        </div>
+
+    </header>
+    <!-- =====================Header Ends ========================== -->
+
+    <!-- =======================main Banner Starts================== -->
+    <div class="relative my-2">
+        <img src="./assets/main.png.jpg" alt="main-banner" class="rounded">
+        <div class="absolute top-55 ml-10 text-white">
+            <h1 class="text-3xl">New Season Arrivals</h1><br>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident quo nobis tempora
+                <br>illo expedita delectus quos libero odit maxime.</p>
+        </div>
+    </div>
+
+    <!-- ============================== Main Banner Ends ================-->
+
+    <!-- =============================Products ========================== -->
+    <section class="mt-4">
+        <div>
+            <h1 class="text-3xl text-center">Latest Products</h1><br>
+        </div>
+        <div class="flex justify-evenly">
+            <hr class="text-stone-400 w-280 text-center my-4">
+        </div>
+
+        <div class="mx-50 text-center flex justify-evenly my-10">
+            <button
+                class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer clicked:bg-black"
+                onclick="fetchData()">All</button>
+            <button id="mens-cloth"
+                class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer"
+                onclick="filter('men\'s%20clothing')">Men's clothing</button>
+            <button id="womens-cloth"
+                class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer"
+                onclick="filter('women\'s%20clothing')">Women's clothing</button>
+            <button id="jewelery"
+                class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer"
+                onclick="filter('jewelery')">Jewelery</button>
+            <button id="electronics"
+                class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer"
+                onclick="filter('electronics')">Electronics</button>
+        </div>
+
+        <div id="products" class="flex flex-wrap justify-evenly"></div>
+    </section>
+
+    <!-- ===================Products End  ============================-->
+
+    <!-- ============================Footer====================== -->
+    <footer class="my-4 text-center">
+        <p>Made with &#10084; by <a href="https://www.linkedin.com/in/kadam-ranjith-kumar/" target="_blank"
+                class="font-bold">Ranjith Kadam</a> with help of ArchieversIT</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
