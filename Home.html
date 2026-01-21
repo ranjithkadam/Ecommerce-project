@@ -53,7 +53,7 @@
     <!-- =======================main Banner Starts================== -->
     <div class="relative my-2">
         <img src="./assets/main.png.jpg" alt="main-banner" class="rounded">
-        <div class="absolute top-55 ml-10 text-white">
+        <div class="absolute top-20 ml-10 text-white sm:absolute sm:top-55 ">
             <h1 class="text-3xl">New Season Arrivals</h1><br>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident quo nobis tempora
                 <br>illo expedita delectus quos libero odit maxime.</p>
@@ -67,11 +67,13 @@
         <div>
             <h1 class="text-3xl text-center">Latest Products</h1><br>
         </div>
+
         <div class="flex justify-evenly">
             <hr class="text-stone-400 w-280 text-center my-4">
         </div>
 
-        <div class="mx-50 text-center flex justify-evenly my-10">
+        <!-- <div class="mx-50 text-center flex justify-evenly my-10"> -->
+             <div class="sm:mx-80 sm:my-10 sm:block grid grid-cols-1 sm:place-items-center">
             <button
                 class="filter-btn border px-4 py-1 rounded hover:bg-black hover:text-white cursor-pointer clicked:bg-black"
                 onclick="fetchData()">All</button>
